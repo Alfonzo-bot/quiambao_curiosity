@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BRUTALIST FEED</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<input type="checkbox" id="submit-toggle" hidden />
+<input type="checkbox" id="settings-toggle" hidden />
+
+<section id="home">
+  <header class="header">
+    <h1 class="glitch">BRUTALIST FEED</h1>
+    <nav class="nav">
+      <label for="settings-toggle" class="nav-item">
+        <span class="nav-text">SETTINGS</span>
+        <div class="nav-scan"></div>
+      </label>
+      <label for="submit-toggle" class="nav-item">
+        <span class="nav-text">CONTACT ME</span>
+        <div class="nav-scan"></div>
+      </label>
+    </nav>
+  </header>
+
+  <div class="stats-bar">
+    <span class="stat-item">ONLINE: <span class="number-counter" data-target="847">0</span></span>
+    <span class="stat-item">POSTS: <span class="number-counter" data-target="23441">0</span></span>
+    <span class="stat-item">COMMENTS: <span class="number-counter" data-target="156789">0</span></span>
+    <span class="terminal-prompt">STATUS: <span class="blink">ACTIVE</span></span>
+  </div>
+
+  <main class="main-content">
+    <section class="section">
+      <div class="section-header">
+        <span class="section-title">LATEST SUBMISSIONS</span>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      </div>
+      <div class="content-grid">
+        <article class="card" data-aos="fade-up">
+          <div class="card-corner-effect"></div>
+          <h2 class="card-title">SDG No. 14 LIFE BELOW WATER</h2>
+          <div class="card-meta">SUBMITTED: 5/5/2025 | SCORE: ??? | COMMENTS: 43</div>
+          <div class="card-content">
+            How do you think should one take care of our ocean?
+          </div>
+          <a href="WEB1.html" class="btn">
+            <span class="btn-text">READ</span>
+            <div class="btn-glitch"></div>
+          </a>
+        </article>
+
+        <article class="card" data-aos="fade-up">
+          <div class="card-corner-effect"></div>
+          <h2 class="card-title">PERIODIC TABLE OF ELEMENTS</h2>
+          <div class="card-meta">SUBMITTED: 5/9/2025 | SCORE: ??? | COMMENTS: 67</div>
+          <div class="card-content">
+            The elements that makes up our universe... how interesting.
+          </div>
+          <a href="PTOE.html" class="btn">
+            <span class="btn-text">READ</span>
+            <div class="btn-glitch"></div>
+          </a>
+        </article>
+
+        <article class="card" data-aos="fade-up">
+          <div class="card-corner-effect"></div>
+          <h2 class="card-title">SDG FORMS</h2>
+          <div class="card-meta">SUBMITTED: 5/16/2025 | SCORE: ??? | COMMENTS: 125</div>
+          <div class="card-content">
+            Who knows where this might take you?
+          </div>
+          <a href="index(form).html" class="btn">
+            <span class="btn-text">READ</span>
+            <div class="btn-glitch"></div>
+          </a>
+        </article>
+
+        <article class="card" data-aos="fade-up">
+          <div class="card-corner-effect"></div>
+          <h2 class="card-title">960 GRID SDG</h2>
+          <div class="card-meta">SUBMITTED: 5/23/2025 | SCORE: ??? | COMMENTS: 289</div>
+          <div class="card-content">
+            Now choices suddenly becomes something to take seriously.
+          </div>
+          <a href="lab5.html" class="btn">
+            <span class="btn-text">READ</span>
+            <div class="btn-glitch"></div>
+          </a>
+        </article>
+
+        <article class="card" data-aos="fade-up">
+          <div class="card-corner-effect"></div>
+          <h2 class="card-title">HTML RESUME</h2>
+          <div class="card-meta">SUBMITTED: 6/3/2025 | SCORE: ??? | COMMENTS: 78</div>
+          <div class="card-content">
+            Who could be the one behind all of this?
+          </div>
+          <a href="resume.html" class="btn">
+            <span class="btn-text">READ</span>
+            <div class="btn-glitch"></div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <div class="ascii-art">
+      <div class="ascii-scanner"></div>
+██████  ██████  ██    ██ ████████  █████  ██      ██ ███████ ████████ 
+██   ██ ██   ██ ██    ██    ██    ██   ██ ██      ██ ██         ██    
+██████  ██████  ██    ██    ██    ███████ ██      ██ ███████    ██    
+██   ██ ██   ██ ██    ██    ██    ██   ██ ██      ██      ██    ██    
+██████  ██   ██  ██████     ██    ██   ██ ███████ ██ ███████    ██    
+RAW • FUNCTIONAL • UNCOMPROMISING
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BUILT WITH RAW HTML/CSS • NO FRAMEWORKS • NO BLOAT</p>
+    <p>TC03 - QUIAMBAO ALFONZO GIAN SEBASTIAN C.</p>
+  </footer>
+</section>
+
+<div class="settings-modal">
+  <div class="modal-content">
+    <label for="settings-toggle" class="close-btn">&times;</label>
+    <h2>THEME SETTINGS</h2>
+    <div class="settings-grid">
+      <div class="theme-option" onclick="changeTheme('green')">
+        <div class="theme-preview green-theme"></div>
+        <span>MATRIX GREEN</span>
+      </div>
+      <div class="theme-option" onclick="changeTheme('red')">
+        <div class="theme-preview red-theme"></div>
+        <span>DANGER RED</span>
+      </div>
+      <div class="theme-option" onclick="changeTheme('blue')">
+        <div class="theme-preview blue-theme"></div>
+        <span>CYBER BLUE</span>
+      </div>
+      <div class="theme-option" onclick="changeTheme('purple')">
+        <div class="theme-preview purple-theme"></div>
+        <span>NEON PURPLE</span>
+      </div>
+      <div class="theme-option" onclick="changeTheme('orange')">
+        <div class="theme-preview orange-theme"></div>
+        <span>AMBER ORANGE</span>
+      </div>
+      <div class="theme-option" onclick="changeTheme('white')">
+        <div class="theme-preview white-theme"></div>
+        <span>TERMINAL WHITE</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-modal">
+  <div class="modal-content">
+    <label for="submit-toggle" class="close-btn">&times;</label>
+    <h2>CONTACT FORM</h2>
+    <form id="contactForm">
+      <label for="name">NAME:</label>
+      <input type="text" placeholder="John Doe" id="name" name="name" required>
+      
+      <label for="email">EMAIL ADDRESS:</label>
+      <input type="email" placeholder="website@gmail.com" id="email" name="email" required>
+      
+      <label for="message">MESSAGE:</label>
+      <textarea placeholder="Your message here..." id="message" name="message" required></textarea>
+      
+      <button type="submit" class="btn" id="submit-btn">
+        <span class="btn-text">SUBMIT</span>
+        <div class="btn-glitch"></div>
+      </button>
+      <p id="response"></p>
+    </form>
+  </div>
+</div>
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbwNKrhI9Sxp3vDZChOgFWpKgRF_Q6yUKHYkMc001ai-jN2DmUtXMXCJJyojDBLFmO38/exec";
+
+// Theme changing function
+function changeTheme(theme) {
+  const root = document.documentElement;
+  
+  switch(theme) {
+    case 'green':
+      root.style.setProperty('--primary-color', '#00ff00');
+      break;
+    case 'red':
+      root.style.setProperty('--primary-color', '#ff0040');
+      break;
+    case 'blue':
+      root.style.setProperty('--primary-color', '#00bfff');
+      break;
+    case 'purple':
+      root.style.setProperty('--primary-color', '#bf00ff');
+      break;
+    case 'orange':
+      root.style.setProperty('--primary-color', '#ff8000');
+      break;
+    case 'white':
+      root.style.setProperty('--primary-color', '#ffffff');
+      break;
+  }
+  
+  document.getElementById('settings-toggle').checked = false;
+}
+
+// Number counter animation
+function animateCounters() {
+  const counters = document.querySelectorAll('.number-counter');
+  
+  counters.forEach(counter => {
+    const target = parseInt(counter.getAttribute('data-target'));
+    const duration = 2000; // 2 seconds
+    const increment = target / (duration / 16); // 60fps
+    let current = 0;
+    
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        counter.textContent = target.toLocaleString();
+        clearInterval(timer);
+      } else {
+        counter.textContent = Math.floor(current).toLocaleString();
+      }
+    }, 16);
+  });
+}
+
+// Trigger animations on load
+window.addEventListener('load', () => {
+  setTimeout(animateCounters, 500);
+  
+  // Animate cards on scroll
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationDelay = Math.random() * 0.5 + 's';
+        entry.target.classList.add('animate-in');
+      }
+    });
+  });
+  
+  cards.forEach(card => observer.observe(card));
+});
+
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const form = document.getElementById('contactForm');
+  const responseMsg = document.getElementById('response');
+  const submitBtn = document.getElementById('submit-btn');
+  
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  
+  if (!name || !email || !message) {
+    responseMsg.textContent = 'ERROR: Please fill in all fields';
+    responseMsg.style.color = '#ff0040';
+    return;
+  }
+  
+  submitBtn.disabled = true;
+  submitBtn.querySelector('.btn-text').textContent = 'SENDING...';
+  responseMsg.textContent = 'TRANSMITTING DATA...';
+  responseMsg.style.color = '#00ff00';
+  
+  try {
+    const formData = new FormData(form);
+    
+    const response = await fetch(scriptURL, {
+      method: "POST",
+      body: formData,
+      mode: 'no-cors' 
+    });
+    
+    responseMsg.textContent = 'MESSAGE TRANSMITTED SUCCESSFULLY!';
+    responseMsg.style.color = '#00ff00';
+    form.reset();
+    
+    setTimeout(() => {
+      document.getElementById('submit-toggle').checked = false;
+      responseMsg.textContent = '';
+    }, 2000);
+    
+  } catch (error) {
+    console.error("Error details:", error);
+    
+    try {
+      const formData = {
+        name: name,
+        email: email,
+        message: message
+      };
+      
+      await fetch(scriptURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+        mode: 'no-cors'
+      });
+      
+      responseMsg.textContent = 'MESSAGE TRANSMITTED SUCCESSFULLY!';
+      responseMsg.style.color = '#00ff00';
+      form.reset();
+      
+      setTimeout(() => {
+        document.getElementById('submit-toggle').checked = false;
+        responseMsg.textContent = '';
+      }, 2000);
+      
+    } catch (secondError) {
+      console.error("Second attempt failed:", secondError);
+      responseMsg.textContent = 'TRANSMISSION FAILED. RETRY PROTOCOL INITIATED.';
+      responseMsg.style.color = '#ff0040';
+    }
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.querySelector('.btn-text').textContent = 'SUBMIT';
+  }
+});
+</script>
+</body>
+</html>

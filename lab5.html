@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG960G</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+ 
+       
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 290px 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+ 
+      
+        header, main, aside, footer {
+            padding: 20px;
+            background-color: rgb(224, 235, 231);
+            border: 1px solid rgb(42, 42, 179);
+            border-radius: 8px;
+        }
+
+        .sdg-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        }
+
+        .sdg {
+        padding: 15px;
+        background-color: #ffffff;
+        font-weight: bold;
+        border-radius: 10px;
+        }
+ 
+        
+        header {
+            grid-area: header;
+            background-color: rgb(99, 107, 107);
+            color: rgb(231, 229, 226);
+        }
+ 
+        
+        aside {
+            grid-area: sidebar;
+            background-color: rgb(21, 76, 177);
+            width: 300px;
+        }
+ 
+        
+        main {
+            grid-area: main;
+            background-color: rgb(65, 67, 73);
+            border-width: ;
+        }
+ 
+        
+        footer {
+            grid-area: footer;
+            background-color: rgb(67, 67, 160);
+            color: burlywood;
+            text-align: center;
+        }
+ 
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>SDG Webpage</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://studentenergy.org/chapters/starting-a-chapter/?gad_source=1&gad_campaignid=21425593130&gbraid=0AAAAADmfXHRkuhAZv_LhXdDU2xbS1aP7Z&gclid=EAIaIQobChMInOXQ65W7jQMV2pVLBR2q1hugEAAYASAFEgLxifD_BwE">Be a Member?</a></li>
+                    <li><a href="https://www.isdm.org.in/blog/sustainable-development-goals-comprehensive-guide?utm_source=adwords&utm_medium=grants&utm_campaign=What_Are_SDGs_A_Comprehensive_Guide_blog&utm_campaignid=20995186954&utm_adgroupid=171711651113&utm_creativeid=720742118373&utm_matchtype=b&utm_device=c&utm_network=g&utm_keyword=17%20sustainable%20development%20goals&utm_placement=&gad_source=1&gad_campaignid=20995186954&gbraid=0AAAAADRZFNGasxnU-Yun9wA2mTlbYLej-&gclid=EAIaIQobChMI-o7jqJO7jQMVgOoWBR09lBYCEAAYASAAEgL97vD_BwE">About</a></li>
+                    <li><a href="https://www.undp.org/sdg-accelerator/background-goals">History</a></li>
+                    <li><a href="https://unsdg.un.org/unsdg-contact?afd_azwaf_tok=eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1bnNkZy51bi5vcmciLCJleHAiOjE3NDgwNTcyNTMsImlhdCI6MTc0ODA1NzI0MywiaXNzIjoidGllcjEtNzVkNmNiZmY0NS1xcDR4eiIsInN1YiI6IjIwMi41Ny4zNy44NyIsImRhdGEiOnsidHlwZSI6Imlzc3VlZCIsInJlZiI6IjIwMjUwNTI0VDAzMjcyM1otMTc1ZDZjYmZmNDVxcDR4emhDMUhLRzd3ZXcwMDAwMDAwNndnMDAwMDAwMDA5Z2VnIiwiYiI6InRrZzZIUlhPNTFUY3ZuUVlRTTVsZ2J4VFJSMmh3U2g5bzlnR0hVZGVnU2MiLCJoIjoiY2NMQzRkVkg1QWhTYldkREVLUXBXVkJRdC1EbXJ0bkJFM0tIWG44TndVRSJ9fQ.TDgE_mACjwJo9URFq9Cuzv9HBQePOVpGhmi6GwEwUaxbpOx-wc6ObtpCmK4GMw0xwKT3Idzl5p4o7EntQjlrGJ2nJrhtfcTy7AFIqDUSY2JwP5P7q3mBYMSoO-K1VNplpv2y3ChOnZ53gmXUh5TNpflHO3SHehZWZ5bJ31Jn5gqRbZ1uq1CtVFohge3Gmpr695xZGiDmlPMxz8PnLuUD9uRt6CSijNqAyUfv9UKW0QOW4aFDh1bM6GCIm1KMyMiOijJj4qtw780pJasSaqQa7rR51PdWw7-U40T1Ve_eKSJiw6hpWleGUUm-JE58Dk0k28kLJk_xITm374SOUtD1vw.WF3obl2IDtqgvMFRqVdYkD5s">Contact</a></li>
+                    <li><a href="index.html" class="btn">BACK HOME</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <h3>SDG LIST</h3>
+            <section class="content">
+                <div class="sdg-grid">
+                <div class="sdg">1. No Poverty</div>
+                <div class="sdg">2. Zero Hunger</div>
+                <div class="sdg">3. Good Health and Well-being</div>
+                <div class="sdg">4. Quality Education</div>
+                <div class="sdg">5. Gender Equality</div>
+                <div class="sdg">6. Clean Water and Sanitation</div>
+                <div class="sdg">7. Affordable and Clean Energy</div>
+                <div class="sdg">8. Decent Work and Economic Growth</div>
+                <div class="sdg">9. Industry, Innovation and Infrastructure</div>
+                <div class="sdg">10. Reduced Inequality</div>
+                <div class="sdg">11. Sustainable Cities and Communities</div>
+                <div class="sdg">12. Responsible Consumption and Production</div>
+                <div class="sdg">13. Climate Action</div>
+                <div class="sdg">14. Life Below Water</div>
+                <div class="sdg">15. Life on Land</div>
+                <div class="sdg">16. Peace, Justice and Strong Institutions</div>
+                <div class="sdg">17. Partnerships for the Goals</div>
+                </div>
+                </section>
+        </aside>
+ 
+      
+        <main>
+            <h2>Introduction to SDGs</h2>
+            <p>Welcome to the SDG Webpage. Learn about the Sustainable Development Goals and how they are shaping the world.</p>
+        </main>
+ 
+        
+        <footer>
+            <p>&copy; 2025 SDG Webpage AGSCQ. All rights reserved.</p>
+        </footer>
+    </div>
+ 
+</body>
+</html>
